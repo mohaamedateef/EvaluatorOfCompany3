@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2019 at 01:39 AM
+-- Generation Time: Apr 17, 2019 at 02:34 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.39
 
@@ -21,6 +21,57 @@ SET time_zone = "+00:00";
 --
 -- Database: `evaluatordb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recommendationformula`
+--
+
+CREATE TABLE `recommendationformula` (
+  `id` int(11) NOT NULL,
+  `fromula` text NOT NULL,
+  `companyname` text NOT NULL,
+  `companyid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `recommendationformula`
+--
+
+INSERT INTO `recommendationformula` (`id`, `fromula`, `companyname`, `companyid`) VALUES
+(1, 'C++ Quizzes Score => 25 and English test score > 85', 'IBM', 2020),
+(2, 'Java Score => 10 and age > 30', 'Microsoft', 2016),
+(3, 'IQ Test => 110 and Experience Years > 3', 'Google', 2000),
+(6, 'Solid Principle Score > 11', 'Facebook', 2030);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recommendcandidates`
+--
+
+CREATE TABLE `recommendcandidates` (
+  `id` int(11) NOT NULL,
+  `full_name` text NOT NULL,
+  `email` text NOT NULL,
+  `mobile_number` int(11) NOT NULL,
+  `age` int(11) NOT NULL,
+  `gender` text NOT NULL,
+  `address` text NOT NULL,
+  `skills` text NOT NULL,
+  `interests_skill_score` int(11) NOT NULL,
+  `interests` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `recommendcandidates`
+--
+
+INSERT INTO `recommendcandidates` (`id`, `full_name`, `email`, `mobile_number`, `age`, `gender`, `address`, `skills`, `interests_skill_score`, `interests`) VALUES
+(1, 'Mohamed Atef', 'mohamedatef@gmail.com', 1001234567, 21, 'Male', 'Giza', 'Java', 25, 'english'),
+(2, 'Mohamed Moustafa', 'mohamedmoustafa@gmail.com', 1005555555, 20, 'Male', 'Giza', 'Java, PHP and C++.', 50, 'english'),
+(3, 'Ahmed Saleh', 'a.shaleh@gmail.com', 12345677, 25, 'Male', 'Haram, Giza.', 'PHP, CSS and HTML.', 25, 'PHP');
 
 -- --------------------------------------------------------
 
@@ -76,6 +127,18 @@ INSERT INTO `recommendquiz` (`title`, `interest`, `gender`, `skills`, `id`, `com
 --
 
 --
+-- Indexes for table `recommendationformula`
+--
+ALTER TABLE `recommendationformula`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `recommendcandidates`
+--
+ALTER TABLE `recommendcandidates`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `recommendcompany`
 --
 ALTER TABLE `recommendcompany`
@@ -90,6 +153,18 @@ ALTER TABLE `recommendquiz`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `recommendationformula`
+--
+ALTER TABLE `recommendationformula`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `recommendcandidates`
+--
+ALTER TABLE `recommendcandidates`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `recommendcompany`
