@@ -15,7 +15,7 @@ You must follow the instructions to run it correctly,
 
 3- open https://hub.docker.com/r/ahmed1saleh/evaluator-api and follow instructions.
 
-4- open localhost/phpmyadmin: http://localhost:8081/phpmyadmin/ and create new database with name "evaluatordb".
+4- open localhost/phpmyadmin: http://localhost:8081/www/phpmyadmin/ and create new database with name "evaluatordb".
 
 5- import file "evaluatordb.sql", you will find in EvaluatorOfCompany3/API which you downloaded,
 
