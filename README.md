@@ -1,15 +1,28 @@
 # Evaluator3
+-----------------------------------------------------------------------------------------------------------------
+
 You must follow the instructions to run it correctly,
 
-First You need To download Xampp Program to run PHP files,
+1- Open Git Bash and write commands: (Or you can dowanloaded and save it in downloads folder)
+   
+   - cd /downloads
+   
+   - git clone https://github.com/mohaamedateef/EvaluatorOfCompany3.git
 
-Second open it and start Apache and MySQL,
+2- You need To download Docker Program and run it,
 
-then open localhost/phpmyadmin and create new database with name "evaluatordb" then import to it file "evaluatordb.sql",
+  Docker Desktop download link : https://www.docker.com/products/docker-desktop .
 
-then copy API folder to c:\xampp\htdocs on your PC,
+3- open https://hub.docker.com/r/ahmed1saleh/evaluator-api and follow instructions.
 
-then open your Postman and chooser GET service and write url for example
-"http://localhost/API/getcompany.php" To GET all the companies in JSON Format.
+4- open localhost/phpmyadmin: http://localhost:8081/phpmyadmin/ and create new database with name "evaluatordb".
 
-Xampp download link : https://www.apachefriends.org/download.html.
+5- import file "evaluatordb.sql", you will find in EvaluatorOfCompany3/API which you downloaded,
+
+-----------------------------------------------------------------------------------------------------------------
+Example:
+
+Open your Postman and chooser GET service and write url 
+"http://localhost:8081/API/getcompany.php" To GET all the companies in JSON Format.
+
+-------------------------------------------------------------------------------------------------------------------
