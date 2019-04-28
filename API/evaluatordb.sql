@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2019 at 02:34 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 5.6.39
+-- Generation Time: Apr 25, 2019 at 09:22 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.1.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `evaluatordb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `appliedcandidate`
+--
+
+CREATE TABLE `appliedcandidate` (
+  `fullName` text NOT NULL,
+  `email` text NOT NULL,
+  `mobileNumber` int(11) NOT NULL,
+  `age` int(11) NOT NULL,
+  `gender` text NOT NULL,
+  `address` text NOT NULL,
+  `skills` text NOT NULL,
+  `passedQuizzes` text NOT NULL,
+  `interests` text NOT NULL,
+  `id` int(11) NOT NULL,
+  `vacancy` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=ascii;
+
+--
+-- Dumping data for table `appliedcandidate`
+--
+
+INSERT INTO `appliedcandidate` (`fullName`, `email`, `mobileNumber`, `age`, `gender`, `address`, `skills`, `passedQuizzes`, `interests`, `id`, `vacancy`) VALUES
+('Ahmed Saleh', 'ahmed.saleh.harby@gmail.com', 123, 21, 'male', '123', 'english', 'english, java', 'java', 1, 'java'),
+('Atef', 'atef@gmail.com', 123, 21, 'male', '123', 'english', 'english, java', 'java', 2, 'java'),
+('abdelbaset', 'abdelbaset@gmail.com', 123, 21, 'male', '123', 'english', 'english, java', 'c++', 3, 'java'),
+('saleh', 'saleh@gmail.com', 123, 21, 'male', '123', 'english', 'english, java', 'java', 4, 'c++'),
+('mohamed', 'mohamed@gmail.com', 123, 21, 'male', '123', 'english', 'english, java', 'java', 5, 'java');
 
 -- --------------------------------------------------------
 
@@ -127,6 +158,12 @@ INSERT INTO `recommendquiz` (`title`, `interest`, `gender`, `skills`, `id`, `com
 --
 
 --
+-- Indexes for table `appliedcandidate`
+--
+ALTER TABLE `appliedcandidate`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `recommendationformula`
 --
 ALTER TABLE `recommendationformula`
@@ -153,6 +190,12 @@ ALTER TABLE `recommendquiz`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `appliedcandidate`
+--
+ALTER TABLE `appliedcandidate`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `recommendationformula`
