@@ -1,0 +1,18 @@
+language: php
+
+notifications:
+  email: false
+
+services:
+ - mysql
+ 
+env:
+  - DB=mysql
+
+addons:
+  mariadb: '10.0'
+
+script: ./EvaluatorTest.php
+
+before_script:
+  - sudo apt-get update
