@@ -23,6 +23,6 @@ You must follow the instructions to run it correctly,
 Example:
 
 Open your Postman and chooser GET service and write url 
-"http://localhost:8081/API/getcompany.php" To GET all the companies in JSON Format.
+"http://localhost:8081/www/getcompany.php" To GET all the companies in JSON Format.
 
 -------------------------------------------------------------------------------------------------------------------
