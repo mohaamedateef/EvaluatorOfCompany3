@@ -1,8 +1,9 @@
 <?php
-	class recommendcompany{
+	namespace APP\Evaluator_component;
+	class recommendcompany
+	{
 		private $conn;
 		private $table = 'recommendcompany';
-
 		public $name;
 		public $address;
 		public $job;
@@ -11,7 +12,8 @@
 		public $timeto;
 		public $interests;
 
-		public function __construct($db){
+		public function __construct($db)
+		{
 			$this->conn = $db;
 		}
 

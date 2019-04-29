@@ -1,4 +1,5 @@
 <?php
+namespace APP\Evaluator_component;
  class recommendquiz
  {
  	private $conn;

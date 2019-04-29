@@ -1,4 +1,5 @@
 <?php
+	namespace APP\Evaluator_component;
 	class Database
 	{
 		private $host = 'localhost';
@@ -7,12 +8,15 @@
 		private $password ='';
 		private $conn;
 
-		public function connect(){
+		public function connect()
+		{
 			$this->conn=null;
-			try{
+			try
+			{
 				$this->conn = mysqli_connect($this->host,$this->username,$this->password,$this->dbname);
 			}
-			catch(PDOException $e){
+			catch(PDOException $e)
+			{
 				echo "Connection Error.";
 			}
 			return $this->conn; 
