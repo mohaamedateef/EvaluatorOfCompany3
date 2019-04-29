@@ -1,9 +1,9 @@
 <?php
 	namespace APP\Evaluator_component;
-	header('Content-Type: application/json');
+	//header('Content-Type: application/json');
 
-	include('database.php');
-	include('recommendcompany.php');
+	/*include('database.php');
+	include('recommendcompany.php');*/
 	$database = new database();
 	$recommendcompany = new recommendcompany ($database->connect());
 	$getcompany_ob=new getCompany();

@@ -1,17 +1,18 @@
 <?php
 	namespace APP\Evaluator_component;
 
-	header('Content-Type: application/json');
- 	header('Access-Control-Allow-Methods: POST');
-	header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods');
+//	header('Content-Type: application/json');
+ //	header('Access-Control-Allow-Methods: POST');
+	//header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods');
 
-	include('database.php');
+	/*include('database.php');
 	include('recommendationformula.php');
 	$database = new database();
 	$recommendationformula= new recommendationformula ($database->connect());
 	$ob=new postformula();
 	$ob->setRecommendationFormulaObject($recommendationformula);
-	$ob->applyPost();
+	$ob->setData();
+	$ob->applyPost();*/
 	class postformula
 	{
 		private $recommendationformula;
