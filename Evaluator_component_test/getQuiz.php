@@ -1,8 +1,8 @@
 <?php
 	namespace APP\Evaluator_component;
-	header('Content-Type: application/json');
-	include('database.php');
-	include('recommendquiz.php');
+	//header('Content-Type: application/json');
+	//include('database.php');
+	//include('recommendquiz.php');
 	
 	$database=new database();
 	$recomQuiz=new recommendquiz($database->connect());

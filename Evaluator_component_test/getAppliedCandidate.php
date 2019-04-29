@@ -1,7 +1,7 @@
 <?php
 namespace APP\Evaluator_component;
 
-	header('Content-Type: application/json');
+/*	header('Content-Type: application/json');
 
 	include('database.php');
 	include('appliedcandidate.php');
@@ -9,7 +9,7 @@ namespace APP\Evaluator_component;
     $AppliedCandidate = new AppliedCandidate($database->connect());
     $ob=new getAppliedCandidate();
     $ob->setAppliedCandidatesObject($AppliedCandidate);
-    $ob->RecommendAppliedCandidates();
+    $ob->RecommendAppliedCandidates();*/
     class getAppliedCandidate
     {
         private $result;

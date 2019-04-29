@@ -1,6 +1,6 @@
 <?php
 	namespace APP\Evaluator_component;
-	header('Content-Type: application/json');
+	/*header('Content-Type: application/json');
 
 	include('database.php');
 	include('recommendcandidates.php');
@@ -9,7 +9,7 @@
 	$recom_candid->setSkills('Java');
 	$ob=new getSingleCandidate();
 	$ob->setRecommendCandidatesObject($recom_candid);
-	$ob->RecommendSingeleCandidates(); 
+	$ob->RecommendSingeleCandidates(); */
 	class getSingleCandidate
 	{
 		private $recommendcandidates_ob;
